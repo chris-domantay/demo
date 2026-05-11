@@ -8,22 +8,25 @@
 }
 
 :root {
-    --bg-color: #ffeed2;
-    --second-bg-color: #98faff;
-    --third-bg-color: #61adf8;
+    --bg-color: #f5dab0;
+    --second-bg-color: #a77fb5;
+    --third-bg-color: #ebb875;
     --text-color: black;
-    --main-color: #613cdb;
-    --accent-color: #fff372;
+    --main-color: #5d15c3;
+    --accent-color: #fec768;
+}
+@font-face{
+	font-family: "Chakra Petch Medium";
+	src: url(chakra-petch/ChakraPetch-Medium.ttf);
 }
 html{
     font-size: 65%;
     overflow-x: hidden;
 }
 body{
-    background-color: var(--third-bg-color);
+    background-color: var(--second-bg-color);
     color: var(--text-color);
     font-family: "Chakra Petch Medium";
-    
 }
 .header{
     position: fixed;
@@ -77,6 +80,9 @@ section{
     align-items: center;
     flex-direction: column;
     gap: 1rem;  
+    background-image: url(GIFs/bg.gif);
+    background-size: 100vw;
+    background-repeat: no-repeat;
 }
 .home-content{
     display: flex;
@@ -85,6 +91,9 @@ section{
     flex-direction: column;
     text-align: center;
     margin-top: 3rem;
+    background-color: rgba(235, 173, 106, 0.856);
+    backdrop-filter: blur(10px);
+    border-radius: 40px;
 }
 span{
     color: var(--main-color);
@@ -102,49 +111,12 @@ span{
     font-weight: 500;
     width: 1000px;
 }
-.social-icons a{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 5rem;
-    height: 5rem;
-    background: transparent;
-    border: 0.3rem solid var(--main-color);
-    font-size: 3rem;
-    border-radius: 50%;
-    color: var(--main-color);
-    margin: 3rem 1.5rem 3rem 0;
-    transition: 0.3s ease;
-}
-.social-icons a:hover{
-    color: white;
-    transform: scale(1.3)translateY(-5px);
-    background-color: var(--main-color)
-}
-.btn{
-    display: inline-block;
-    padding: 1rem 2.8rem;
-    background: var(--main-color);
-    border-radius: 4rem;
-    font-size: 2rem;
-    color: white;
-    border: 2px solid transparent;
-    letter-spacing: 0.1rem;
-    transition: 0.3s ease;
-    cursor: pointer;
-}
-.btn:hover{
-    transform: scale(1.05);
-    background: var(--bg-color);
-    color: var(--main-color);
-    border: 2px solid var(--main-color);
-}
 .about{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10rem;
-    background: var(--third-bg-color);
+    background: var(--second-bg-color);
     color: black;
 }
 .about img{
@@ -157,6 +129,7 @@ span{
 .about-content h2{
     text-align: center;
     line-height: 1.5;
+    text-decoration: underline rgb(61, 18, 18);
 }
 .about-content h3{
     font-size: 2.6rem;
@@ -165,8 +138,6 @@ span{
     font-size: 2rem;
     margin: 2rem 0rem;
 }
-
-
 .howto{
    background-color: var(--second-bg-color);
    color:black;
@@ -174,6 +145,7 @@ span{
 .howto h2{
     margin-bottom: 5rem;
     color: black;
+    text-decoration: underline rgb(61, 18, 18);
 }
 .howto-container{
     display:grid;
@@ -181,40 +153,118 @@ span{
     align-items: center;
     gap: 2rem;
 }
-.howto-box{
-    border: 3px solid var(--main-color);
-    height: 800px;
+.howto-box1{
+    background-color: var(--third-bg-color);
+    border: 3px solid rgb(107, 63, 0);
+    height: 640px;
     border-radius: 1em;
     cursor: pointer;
     transition: 0.3s ease;
 }
-.howto-box:hover{
+.howto-box2{
+    background-color: var(--third-bg-color);
+    border: 3px solid rgb(107, 63, 0);
+    height: 1000px;
+    border-radius: 1em;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.howto-box3{
+    background-color: var(--third-bg-color);
+    border: 3px solid rgb(107, 63, 0);
+    height: 580px;
+    border-radius: 1em;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.howto-box4{
+    background-color: var(--third-bg-color);
+    border: 3px solid rgb(107, 63, 0);
+    height: 1020px;
+    border-radius: 1em;
+    cursor: pointer;
+    transition: 0.3s ease;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.howto-box1:hover, .howto-box2:hover, .howto-box3:hover, .howto-box4:hover{
     background: var(--main-color);
     color: white;
     transform: scale(1.03);
 }
-.howto-box .howto-info{
+.howto-info kbd{
+    background-color: rgb(171, 171, 171);
+    border: 2px solid black;
+    border-radius: 13%;
+    padding: .43rem;
+}
+.howto-box1 .howto-box2 .howto-box3 .howto-box4 .howto-info{
     display: flex;
     flex-direction: column;
     text-align: left;
-    justify-content: center;
-    align-items: baseline;
+    justify-content:center;
+    align-items: center;
     padding: 6rem;
 }
+.howto-info img{
+    width: 24vw;
+}
+.movement{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 10rem;
+    margin-top: 4rem;
+}
+.offense{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 2rem;
+}
+.defense{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 20px;
+}
+.info_img{
+    align-content: center;
+}
+.howto-info h5{
+    font-size: xx-large;
+    font-weight: 600;
+}
 .howto-info h4{
-    font-size: 37px;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 50px;
     font-weight: 600;
 }
 .howto-info p{
-    margin-top: 5rem;
+    margin-top: 2rem;
     font-size: 20px;
+    margin-bottom: 4rem;
     font-weight: 400;
-
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
-.howto-info video{
-    align-self: center;
-    border: 2px solid var(--accent-color);
-    border-radius: 1rem;
+.howto-info ul{
+    margin-left: 4rem;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 2.2;
+}
+.howto-info li{
+    margin-bottom: 1rem;
 }
 .meet{
     background-color: var(--second-bg-color);
@@ -222,6 +272,7 @@ span{
 }
 .meet h2{
     margin-bottom:5rem;
+    text-decoration: underline rgb(61, 18, 18);
 }
 .meet-conctainer{
     display:grid;
@@ -232,10 +283,11 @@ span{
     display: flex;
     justify-content: center;
     flex-direction: row;
-    border: 3px solid var(--main-color);
+    border: 3px solid rgb(107, 63, 0);
     height: 700px;
     border-radius: 1em;
     padding-left: 3rem;
+    background-color: var(--third-bg-color);
 }
 .meet-info h4{
     font-size: 36px;
@@ -247,6 +299,8 @@ span{
     top: 2rem;
     bottom: 2rem;
     width: 16vw; 
+    border: 2px solid rgb(107, 63, 0);
+    border-radius: 10%;
 }
 .meet-info h3{
     padding: 4rem 270px;
@@ -272,21 +326,30 @@ span{
     margin-bottom: 2rem;
     font-size: 15px;
 }
-.mypage a{
-    justify-content: center;
-    font-size: 3rem;
-    align-items: center;
-    margin: 25rem;
+.meet-info a{
     color: white;
-    background-color: #613cdb;
-    border: 1rem solid var(--main-color);
-    border-radius: 3%;
-    transition: 0.3s ease;
 }
-.mypage a:hover{
-    color: var(white);
-    transform: scale(3)translateY(-5px);
-    background-color: var(--third-bg-color);
+.meet-info a:hover{
+    color: var(--main-color);
+}
+.btn{
+    display: inline-block;
+    margin-left: 23rem;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    color: white;
+    border-radius: 4rem;
+    font-size: 2rem;
+    border: 2px solid transparent;
+    letter-spacing: 0.1rem;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    transform: scale(1.05);
+    background: var(--bg-color);
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
 }
 .footer{
     position: relative;

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <title>Coast Pyter</title>  
+</head>
+
+<body>
+    <header class="header">
+        <a href="#home" class="logo">Coast
+        <span>Pyter</span></a>
+
+        <i class="bx bx-menu" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About the Game</a>
+            <a href="#howto">How to Play</a>
+            <a href="#meet">Meet the Team</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Coast <span>Pyter</span></h1>
+            <p><br>You wanna see my 100% power?</p>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <div>
+            <h2 class="heading">About the <span>Game</span></h2>
+            </div>
+            <p>
+                You arrive back to a familiar island filled with white
+                sands, clear oceans, and salty winds. It is Destiny Island,
+                your home. However, you stumbled upon another clone of yourself? 
+                You must prove that you are the real Sora by beating the 
+                "imposter" up! Who will reign supreme? Which power is stronger?
+                Is light the heart's true nature, or is the other way around?
+            </p>
+            
+            <p>
+                Coast Pyter is a simple 2D fighting game where two 
+                players control their own Sora with access to a limited number of
+                moves in order to fight each other until one's HP bar runs out. 
+                Be careful! You only get a small amount of HP so make each hit count! 
+            </p>
+            <p>
+                The mission of the game is to teach players this fundamental fighting 
+                game concept called "Footsies" where players must control the space
+                to gain the upper hand. Often times this inolves careful movement, poking,
+                whiff punishing, and hit confirming.
+            </p>
+            <p>
+                This game is coded in Python and accessing the Python module to access its 
+                game dev library. Although the assets of the game is heavily inspired by 
+                a JRPG "Kingdom Hearts", the main inspiration of the game came from an indie
+                fighting game called "Footsies", where you only gain access to a small number
+                of attacks, 3 HP bars, and only a 2 hit combo. Like Coast Pyter, the mission
+                of the game is to teach players the concept of "Footsies" in a simplified scenario.
+            </p>
+
+        </div>
+    </section>
+
+    <section class="howto" id="howto">
+        <h2 class="heading">How to <span>Play</span></h2>
+
+        <div class="howto-box1">
+            <div class="howto-info">
+                <h4>Movement</h4>
+                <div class="movement">
+                    <div class="forward">
+                        <h5>Run Forward</h5>
+                        <img src="GIFs/Run.gif" alt="">
+                        <p>
+                            Hold <kbd>D</kbd> ( <kbd>←</kbd> for Player 2 ) to run forward.
+                        </p>
+                    </div>
+                    <div class="backward">
+                        <h5>Walk Back</h5>
+                        <img src="GIFs/Back.gif" alt="">
+                        <p>
+                            Hold <kbd>A</kbd> ( <kbd>→</kbd> for Player 2 ) to walk backward.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="howto-box2">
+            <div class="howto-info">
+                <h4>Offense</h4>
+                <div class="offense">
+                    <div class="C-light">
+                        <h5>Standing Light</h5>
+                        <img src="GIFs/Sl.gif" alt="">
+                        <p>
+                            Press <kbd>J</kbd> ( <kbd>Num_2</kbd> for Player 2 ) to do a light attack.
+                        </p>
+                    </div>
+                    <div class="S-heavy">
+                        <h5>Standing Heavy</h5>
+                        <img src="GIFs/Sh.gif" alt="">
+                        <p>
+                            Press <kbd>K</kbd> ( <kbd>Num_3</kbd> for Player 2 ) to do a heavy attack.
+                        </p>
+                    </div>
+                    <div class="C-light">
+                        <h5>Crouching Light</h5>
+                        <img src="GIFs/Cl.gif" alt="">
+                        <p>
+                            Press <kbd>S</kbd>+<kbd>K</kbd> ( <kbd>Down</kbd> + <kbd>KP_3</kbd> for Player 2 ) to do a crouching light attack.
+                        </p>
+                    </div>
+                    <div class="C-heavy">
+                        <h5>Crouching Heavy</h5>
+                        <img src="GIFs/Ch.gif" alt="">
+                        <p>
+                            Press <kbd>S</kbd>+<kbd>K</kbd> ( <kbd>Down</kbd>+<kbd>KP_3</kbd> for Player 2 ) to do a crouching heavy attack.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="howto-box3">
+            <div class="howto-info">
+                <h4>Defense</h4>
+                <div class="defense">
+                    <div class="S-block">
+                        <h5>Standing Block</h5>
+                        <img src="GIFs/Sblock.gif" alt="">
+                        <p>
+                            Hold <kbd>A</kbd> ( <kbd>Right</kbd> for Player 2 ) to do a Standing Block.
+                        </p>
+                    </div>
+                    <div class="C-block">
+                        <h5>Crouching Block</h5>
+                        <img src="GIFs/Cblock.gif" alt="">
+                        <p>
+                            Hold <kbd>S</kbd> ( <kbd>Down</kbd> for Player 2 ) to do a Standing Block.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="howto-box4">
+            <div class="howto-info">
+                <h4>Tips</h4>
+                    <ul>
+                        <li>
+                            <h5>What and when to attack?</h5>
+                            Light Attacks are fast and reliable, especially in close range, use this to check your opponent.
+                            <br>Standing Light Attack is the most accesible and reliable while Crouching Light Attack has slighly lower range but hits low. 
+                            <br>Heavy attacks are long ranged and high damage, use them at long ranges to avoid getting punished.
+                            <br>Standing Heavy Attack has good damage and range while Crouching Heavy Attack has more damage but recovers slower.
+                        </li>
+                        <li>
+                            <h5>Spacing!</h5>
+                            Controlling the space is crucial. Proper spacing allows you to land hits, safely poke, and punish opponent whiffs.
+                        </li>
+                        <li>
+                            <h5>Annnnd you're blocked</h5>
+                            A good defense is a good offense. Block attacks to avoid getting hit and wait for the opponent to make a mistake
+                            <br>Standing Block negates all Standing Attacks but not Crouching Attacks.
+                            <br>Crouching Block negates almost all Attacks except for Standing Heavy.
+                        </li>
+                        <li>
+                            <h5>Mix em up!</h5>
+                            Mix up your offense by constantly switching between Standing and Crouching attacks. This would leave your opponent guessing and 
+                            soon enough they will slip up.
+                        </li>
+                        <li>
+                            <h5>Combos</h5>
+                            You can do combos to dish out more damage. Hit them with any light attacks and follow it up with a heavy attack.
+                            <br> (Keep in mind that combos only works when you confirmed that your Light Attack hits an enemy and is not blocked.)
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="meet" id="meet">
+        <h2 class="heading">Meet the <span>Team</span></h2>
+        
+        <div class="meet-box">
+            <div class="meet-info">
+                <h4>Christoffer A. Domantay</h4>
+                    <div class="image-editing-img">
+                        <img src="FJPD1812.jpg" alt="">
+                    </div>
+            </div>
+            <div class="meet-info">
+                <h3>Roles:</h3>
+                    <ul>
+                        <li>Lead Director</li>
+                        <li>Designer</li>
+                        <li>The Pogi</li>
+                        <li>Programmer</li>
+                        <li>Playtester</li>
+                    </ul>
+                <p>
+                    Yup, its just me. Now you know why the "group" name is called
+                    "PM1 SOLO". 
+                    <br>If you wanna learn more about me, click the button 
+                    below to go to my page.
+                </p>
+                <div>
+                    <a href="../Portfolio/Domantay Christoffer Portfolio.html" class="btn">My Page</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer class="footer">
+        <p class="copyright">GROUP: PM1 SOLO | ITEPC02 - WEB TECHNOLOGY AND DEVELOPMENT 1 | A.Y. 2025 - 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
