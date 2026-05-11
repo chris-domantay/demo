@@ -164,7 +164,7 @@ span{
 .howto-box2{
     background-color: var(--third-bg-color);
     border: 3px solid rgb(107, 63, 0);
-    height: 1000px;
+    height: 1660px;
     border-radius: 1em;
     cursor: pointer;
     transition: 0.3s ease;
@@ -210,6 +210,15 @@ span{
 .howto-info img{
     width: 24vw;
 }
+.howto-info table{
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.howto-info table, th, td {
+  border:2px solid black;
+  border-collapse: collapse;
+}
 .movement{
     display: flex;
     flex-direction: row;
@@ -221,7 +230,7 @@ span{
 }
 .offense{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
@@ -252,7 +261,7 @@ span{
 .howto-info p{
     margin-top: 2rem;
     font-size: 20px;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     font-weight: 400;
     margin-left: 3rem;
     margin-right: 3rem;
